@@ -1,0 +1,24 @@
+openapi: "3.0.3"
+info:
+  title: "transfer-service"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8109"
+paths:
+  "/transfers":
+    get:
+      summary: "List transfers"
+      responses:
+        "200":
+          description: OK
+    post:
+      summary: "Create transfer"
+      responses:
+        "200":
+          description: OK
+  "/transfers/{id}":
+    get:
+      summary: "Get transfer by ID"
+      responses:
+        "200":
+          description: OK
