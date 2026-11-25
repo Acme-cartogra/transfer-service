@@ -17,6 +17,12 @@ paths:
         "200":
           description: OK
   "/transfers/{id}":
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
     get:
       summary: "Get transfer by ID"
       responses:
